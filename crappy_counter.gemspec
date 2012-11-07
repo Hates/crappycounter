@@ -8,8 +8,8 @@ Gem::Specification.new do |gem|
   gem.version       = CrappyCounter::VERSION
   gem.authors       = ["Richard Hart"]
   gem.email         = ["richard@ur-ban.com"]
-  gem.description   = %q{TODO: Crappy redis counter}
-  gem.summary       = %q{TODO: Crappy redis counter}
+  gem.description   = %q{Crappy redis counter}
+  gem.summary       = %q{Crappy redis counter}
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($/)
