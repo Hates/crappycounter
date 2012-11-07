@@ -18,7 +18,7 @@ module CrappyCounter
         date_key << "#{combined_key}:"
         [:year, :month, :day].each do |date_param|
           next unless date.respond_to?(date_param)
-          date_key << date.send(date_param)
+          date_key << date.send(date_param).to_s
           $redis.incr date_key
         end
       end
