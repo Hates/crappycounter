@@ -1,4 +1,4 @@
-require "crappycounter/version"
+require "crappy_counter/version"
 
 module CrappyCounter
 
