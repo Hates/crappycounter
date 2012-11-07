@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'crappy_counter/version'
 
 Gem::Specification.new do |gem|
-  gem.name          = "CrappyCounter"
+  gem.name          = "crappycounter"
   gem.version       = CrappyCounter::VERSION
   gem.authors       = ["Richard Hart"]
   gem.email         = ["richard@ur-ban.com"]
