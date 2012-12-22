@@ -25,4 +25,15 @@ module CrappyCounter
     end
   end
 
+  def self.lpush(opts)
+    raise NoRedisFound unless $redis
+
+    combined_key = ""
+    opts[:keys].each do |key|
+      combined_key << (combined_key.empty? ? key : ":#{key}")
+      $redis.lpush combined_key, opts[:values]
+    end
+
+  end
+
 end
